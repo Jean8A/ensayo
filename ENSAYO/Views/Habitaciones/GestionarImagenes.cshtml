@@ -1,0 +1,81 @@
+﻿@model ENSAYO.Models.Habitacione
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Gestionar Imágenes</h1>
+
+    <!-- Mensaje de confirmación -->
+    @if (TempData["Mensaje"] != null)
+    {
+        <div class="alert alert-success text-center">@TempData["Mensaje"]</div>
+    }
+
+    <!-- Mostrar imágenes asociadas -->
+    <div class="row">
+        @if (Model.ImagenHabitacions != null && Model.ImagenHabitacions.Any())
+        {
+            foreach (var imagen in Model.ImagenHabitacions)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <!-- Imagen -->
+                        <img src="@imagen.IdImagenNavigation.UrlImagen" alt="Imagen" class="card-img-top img-thumbnail" />
+
+                        <!-- Detalles y botón -->
+                        <div class="card-body text-center">
+                            <form asp-action="EliminarImagen" method="post">
+                                <input type="hidden" name="idImagen" value="@imagen.IdImagen" />
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i> Eliminar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12">
+                <p class="text-center text-muted">No hay imágenes asociadas a esta habitación.</p>
+            </div>
+        }
+    </div>
+
+    <!-- Botón para regresar -->
+    <div class="text-center mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.IdHabitacion" class="btn btn-secondary">
+            <i class="fas fa-arrow-left"></i> Volver a Edición
+        </a>
+    </div>
+</div>
+
+<style>
+    .img-thumbnail {
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .btn-sm {
+        margin-top: 0.5rem;
+    }
+
+    .alert {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .text-muted {
+        font-size: 1rem;
+    }
+</style>
+

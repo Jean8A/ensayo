@@ -1,0 +1,94 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* Asegúrate de ajustar el ancho según tu necesidad */
+    overflow: hidden;
+}
+
+    .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+.overlay-images img.secondary-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .overlay-images img.secondary-image {
+    animation: imageSlide 3s infinite;
+}
+
+@keyframes imageSlide {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+/* Estilo adicional para el switch */
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #28a745; /* Verde cuando está activado (Disponible) */
+    border-color: #28a745;
+}
+
+.custom-control-input:checked:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.custom-control-label::before {
+    background-color: #6c757d; /* Gris cuando está desactivado (Ocupada) */
+    border-color: #6c757d;
+}
+
+/* Asegúrate de que el texto tenga un buen contraste */
+.custom-control-label {
+    cursor: pointer;
+    color: #495057; /* Color de texto predeterminado */
+}
+
+    .custom-control-label:active {
+        color: #007bff; /* Color de texto al estar activo */
+    }

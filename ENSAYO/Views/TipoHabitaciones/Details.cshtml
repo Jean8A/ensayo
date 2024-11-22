@@ -1,0 +1,98 @@
+﻿@* @model ENSAYO.Models.TipoHabitacione
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1>Details</h1>
+
+<div>
+    <h4>TipoHabitacione</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreTipoHabitacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreTipoHabitacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NumeroPersonas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NumeroPersonas)
+        </dd>
+        <dt class="col-sm-4 font-weight-bold">@Html.DisplayNameFor(model => model.Estado)</dt>
+        <dd class="col-sm-8">
+            <span class="badge @(Model.Estado ? "badge-success" : "badge-danger")" style="border: 1px solid #000; padding: 0.5rem;">
+                @(Model.Estado ? "Disponible" : "Ocupada")
+            </span>
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdTipoHabitacion">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+ *@
+
+ @model ENSAYO.Models.TipoHabitacione
+
+@{
+    ViewData["Title"] = "Detalles del Tipo de Habitación";
+}
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Detalles del Tipo de Habitación</h1>
+
+    <div class="card p-4" style="background-color: #f4f4f4; border-radius: 8px;">
+        <h4 class="mb-3">Información del Tipo de Habitación</h4>
+        <dl class="row">
+            <dt class="col-sm-4 font-weight-bold">@Html.DisplayNameFor(model => model.NombreTipoHabitacion)</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.NombreTipoHabitacion)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">@Html.DisplayNameFor(model => model.NumeroPersonas)</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.NumeroPersonas)</dd>
+
+            <dt class="col-sm-4 font-weight-bold">@Html.DisplayNameFor(model => model.Estado)</dt>
+            <dd class="col-sm-8">
+                <span class="badge @(Model.Estado ? "badge-success text-light" : "badge-danger text-light")"
+                      style="border: 1px solid #000; padding: 0.5rem; font-weight: bold;">
+                    @(Model.Estado ? "Activo" : "Inactivo")
+                </span>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.IdTipoHabitacion" class="btn btn-warning">Editar</a>
+        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+    </div>
+</div>
+
+<style>
+    .btn {
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .btn:hover {
+            filter: brightness(90%);
+        }
+
+    .badge {
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .badge-success {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    .badge-danger {
+        background-color: #dc3545;
+        color: #fff;
+    }
+</style>

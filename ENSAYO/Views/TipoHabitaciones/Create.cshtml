@@ -1,0 +1,91 @@
+﻿@* @model ENSAYO.Models.TipoHabitacione
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>TipoHabitacione</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NombreTipoHabitacion" class="control-label"></label>
+                <input asp-for="NombreTipoHabitacion" class="form-control" />
+                <span asp-validation-for="NombreTipoHabitacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroPersonas" class="control-label"></label>
+                <input asp-for="NumeroPersonas" class="form-control" />
+                <span asp-validation-for="NumeroPersonas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+ *@
+
+ @model ENSAYO.Models.TipoHabitacione
+
+@{
+    ViewData["Title"] = "Crear Tipo de Habitación";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h2 class="text-center mb-0">Crear Tipo de Habitación</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <!-- Nombre del Tipo de Habitación -->
+                <div class="form-group mb-3">
+                    <label asp-for="NombreTipoHabitacion" class="form-label fw-bold">Nombre del Tipo de Habitación</label>
+                    <input asp-for="NombreTipoHabitacion" class="form-control" />
+                    <span asp-validation-for="NombreTipoHabitacion" class="text-danger"></span>
+                </div>
+
+                <!-- Número de Personas -->
+                <div class="form-group mb-3">
+                    <label asp-for="NumeroPersonas" class="form-label fw-bold">Número de Personas</label>
+                    <input asp-for="NumeroPersonas" class="form-control" />
+                    <span asp-validation-for="NumeroPersonas" class="text-danger"></span>
+                </div>
+
+                <!-- Botón Crear -->
+                <div class="form-group text-center">
+                    <input type="submit" value="Crear" class="btn btn-success px-4" />
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-center">
+            <a asp-action="Index" class="btn btn-secondary">Volver a la Lista</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

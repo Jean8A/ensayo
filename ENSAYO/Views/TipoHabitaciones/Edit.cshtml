@@ -1,0 +1,155 @@
+﻿@* @model ENSAYO.Models.TipoHabitacione
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TipoHabitacione</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdTipoHabitacion" />
+            <div class="form-group">
+                <label asp-for="NombreTipoHabitacion" class="control-label"></label>
+                <input asp-for="NombreTipoHabitacion" class="form-control" />
+                <span asp-validation-for="NombreTipoHabitacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroPersonas" class="control-label"></label>
+                <input asp-for="NumeroPersonas" class="form-control" />
+                <span asp-validation-for="NumeroPersonas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+ *@
+
+ @model ENSAYO.Models.TipoHabitacione
+
+@{
+    ViewData["Title"] = "Editar Tipo de Habitación";
+}
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Editar Tipo de Habitación</h1>
+    <div class="row justify-content-center">
+        <!-- Formulario de edición -->
+        <div class="col-md-6">
+            <div class="card shadow p-4" style="border-radius: 8px;">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="IdTipoHabitacion" />
+
+                    <!-- Campo: Nombre Tipo de Habitación -->
+                    <div class="form-group">
+                        <label asp-for="NombreTipoHabitacion" class="form-label">Nombre del Tipo de Habitación</label>
+                        <input asp-for="NombreTipoHabitacion" class="form-control" placeholder="Ingrese el nombre" />
+                        <span asp-validation-for="NombreTipoHabitacion" class="text-danger"></span>
+                    </div>
+
+                    <!-- Campo: Número de Personas -->
+                    <div class="form-group mt-3">
+                        <label asp-for="NumeroPersonas" class="form-label">Número de Personas</label>
+                        <input asp-for="NumeroPersonas" class="form-control" placeholder="Ejemplo: 2" />
+                        <span asp-validation-for="NumeroPersonas" class="text-danger"></span>
+                    </div>
+
+                    <!-- Campo: Estado -->
+                    <div class="form-group mt-3">
+                        <label class="form-label">Estado</label>
+                        <div class="form-check form-switch">
+                            <input asp-for="Estado" class="form-check-input" id="estadoSwitch" />
+                            <label id="estadoLabel" class="form-check-label"></label>
+                        </div>
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+
+                    <!-- Botón Guardar -->
+                    <div class="form-group mt-4">
+                        <input type="submit" value="Guardar" class="btn btn-primary btn-block" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Volver -->
+    <div class="text-center mt-4">
+        <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Cambiar texto del estado dinámicamente
+        document.addEventListener("DOMContentLoaded", function () {
+            const estadoInput = document.getElementById('estadoSwitch');
+            const estadoLabel = document.getElementById('estadoLabel');
+
+            // Función para actualizar el texto del estado
+            const actualizarEstado = () => {
+                estadoLabel.textContent = estadoInput.checked ? "Disponible" : "Ocupado";
+            };
+
+            // Inicializar el texto según el estado actual
+            actualizarEstado();
+
+            // Actualizar el texto al cambiar el switch
+            estadoInput.addEventListener('change', actualizarEstado);
+        });
+    </script>
+}
+
+<style>
+    .btn {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+    }
+
+    .form-check-label {
+        margin-left: 0.5rem;
+    }
+
+    .card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+</style>
+

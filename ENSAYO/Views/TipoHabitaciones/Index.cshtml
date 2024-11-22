@@ -1,0 +1,174 @@
+﻿@* @model IEnumerable<ENSAYO.Models.TipoHabitacione>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreTipoHabitacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroPersonas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreTipoHabitacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroPersonas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTipoHabitacion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTipoHabitacion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTipoHabitacion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ *@
+
+ @model IEnumerable<ENSAYO.Models.TipoHabitacione>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@Html.AntiForgeryToken()
+
+<h1 class="text-center mb-4">Lista de Tipos de Habitaciones</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Crear Nuevo</a>
+</p>
+
+<table class="table table-bordered table-striped" id="tipoHabitacionesTable">
+    <thead class="table-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.NombreTipoHabitacion)</th>
+            <th>@Html.DisplayNameFor(model => model.NumeroPersonas)</th>
+            <th>@Html.DisplayNameFor(model => model.Estado)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="tipoHabitacion-@item.IdTipoHabitacion">
+                <td>@Html.DisplayFor(modelItem => item.NombreTipoHabitacion)</td>
+                <td>@Html.DisplayFor(modelItem => item.NumeroPersonas)</td>
+                <td>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="EstadoSwitch_@item.IdTipoHabitacion"
+                               onchange="updateEstado(@item.IdTipoHabitacion, this.checked)"
+                        @(item.Estado ? "checked" : "") />
+                        <label class="form-check-label" for="EstadoSwitch_@item.IdTipoHabitacion">
+                            @(item.Estado ? "Activo" : "Inactivo")
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.IdTipoHabitacion" class="btn btn-sm mx-1 btn-primary">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.IdTipoHabitacion" class="btn btn-sm mx-1 btn-info">Detalles</a> |
+                    <a asp-action="Delete" asp-route-id="@item.IdTipoHabitacion" class="btn btn-sm mx-1 btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<style>
+    .table-bordered td {
+        background-color: #ffffff; /* Aseguramos que las celdas de la tabla tengan un fondo blanco */
+    }
+
+    .table-striped tbody tr:nth-child(odd) {
+        background-color: #f9f9f9; /* Fondo alternado en las filas */
+    }
+
+    .form-check-input:checked {
+        background-color: #28a745 !important; /* Color verde para el switch cuando está seleccionado */
+        border-color: #28a745 !important;
+    }
+
+    .btn {
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn:hover {
+        filter: brightness(90%);
+    }
+
+    .pagination .page-link {
+        color: #28a745;
+    }
+
+    .pagination .page-link:hover {
+        background-color: #e9ecef;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        function updateEstado(idTipoHabitacion, nuevoEstado) {
+            const confirmacion = window.confirm("¿Quieres cambiar el estado del tipo de habitación?");
+            if (!confirmacion) {
+                document.querySelector(`#EstadoSwitch_${idTipoHabitacion}`).checked = !nuevoEstado;
+                return;
+            }
+
+            // Obtén el token CSRF del formulario o de un input oculto
+            const csrfToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+            // Verificar los valores antes de enviar
+            console.log("ID:", idTipoHabitacion, "Estado:", nuevoEstado, "CSRF Token:", csrfToken);
+
+            fetch(`/TipoHabitaciones/ActualizarEstado?id=${idTipoHabitacion}&estado=${nuevoEstado}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken // Incluir el token CSRF en el encabezado
+                }
+            })
+
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error al actualizar el estado');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        const estadoLabel = document.querySelector(`#tipoHabitacion-${idTipoHabitacion} .form-check-label`);
+                        estadoLabel.textContent = nuevoEstado ? 'Activo' : 'Inactivo';
+                    } else {
+                        alert(data.message || 'Hubo un problema al actualizar el estado.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al actualizar el estado.');
+                });
+        }
+
+    </script>
+}
+

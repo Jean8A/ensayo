@@ -1,0 +1,356 @@
+﻿@*  @model IEnumerable<ENSAYO.Models.Habitacione>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Lista de Habitaciones</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <input type="text" id="searchInput" class="form-control w-25" placeholder="Buscar habitación..." onkeyup="filterTable()" />
+        <a asp-action="Create" class="btn btn-success">Crear Habitación</a>
+    </div>
+
+    <table class="table table-hover" id="habitacionesTable" style="background-color: #f4f4f4; border-radius: 8px; overflow: hidden;">
+        <thead class="table-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.NombreHabitacion)</th>
+                <th>@Html.DisplayNameFor(model => model.Estado)</th>
+                <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
+                <th>@Html.DisplayNameFor(model => model.Costo)</th>
+                <th>Tipo de Habitación</th>
+                <th>Cantidad de Personas</th>
+                <th>Imágenes</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="habitacion-@item.IdHabitacion">
+                    <td>@Html.DisplayFor(modelItem => item.NombreHabitacion)</td>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="EstadoSwitch_@item.IdHabitacion"
+                                   onchange="updateEstado(@item.IdHabitacion, this.checked)"
+                            @(item.Estado == true ? "checked" : "") />
+                            <label class="form-check-label" for="EstadoSwitch_@item.IdHabitacion">
+                                @(item.Estado == true ? "Disponible" : "Ocupada")
+                            </label>
+                        </div>
+                    </td>
+                    <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Costo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.IdTipoHabitacionNavigation.NombreTipoHabitacion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.IdTipoHabitacionNavigation.NumeroPersonas)</td>
+                    <td>
+                        @if (item.ImagenHabitacions != null && item.ImagenHabitacions.Any())
+                        {
+                            var imagenes = item.ImagenHabitacions.ToList();
+                            <div class="image-container" style="position: relative; width: 170px; height: 100px;">
+                                <img src="@imagenes[0].IdImagenNavigation.UrlImagen" alt="Imagen principal" class="img-thumbnail main-image" style="width: 100%; height: 100%;" />
+                                @if (imagenes.Count > 1)
+                                {
+                                    @for (int i = 1; i < imagenes.Count; i++)
+                                    {
+                                        <img src="@imagenes[i].IdImagenNavigation.UrlImagen" alt="Imagen secundaria" class="img-thumbnail secondary-image" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s;" />
+                                    }
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <span>No hay imágenes</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdHabitacion" class="btn btn-sm mx-1">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.IdHabitacion" class="btn btn-sm mx-1">Detalles</a>
+                        <a asp-action="Delete" asp-route-id="@item.IdHabitacion" class="btn btn-sm mx-1">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation" class="mt-3">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+    </nav>
+</div>
+
+@section Scripts {
+    <script>
+        function filterTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById('habitacionesTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? '' : 'none';
+            }
+        }
+
+        function updateEstado(idHabitacion, nuevoEstado) {
+            const confirmacion = window.confirm("¿Quieres cambiar el estado de la habitación?");
+            if (!confirmacion) {
+                document.querySelector(`#EstadoSwitch_${idHabitacion}`).checked = !nuevoEstado;
+                return;
+            }
+
+            const csrfToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+            fetch(`/Habitaciones/ActualizarEstado/${idHabitacion}?estado=${nuevoEstado}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error al actualizar el estado');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data && data.success) {
+                        const estadoLabel = document.querySelector(`#habitacion-${idHabitacion} .form-check-label`);
+                        estadoLabel.textContent = nuevoEstado ? 'Disponible' : 'Ocupada';
+                    } else {
+                        alert('Hubo un problema al actualizar el estado.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al actualizar el estado.');
+                });
+        }
+    </script>
+}
+
+    <style>
+        .btn {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            .btn:hover {
+                filter: brightness(90%);
+            }
+
+        .pagination .page-link {
+            color: #28a745;
+        }
+
+            .pagination .page-link:hover {
+                background-color: #e9ecef;
+            }
+    </style>
+}
+ *@
+
+ @model IEnumerable<ENSAYO.Models.Habitacione>
+
+@{
+    ViewData["Title"] = "Index";
+}
+@Html.AntiForgeryToken()
+
+<div class="container my-4">
+    <h1 class="text-center mb-4">Lista de Habitaciones</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <input type="text" id="searchInput" class="form-control w-25" placeholder="Buscar habitación..." onkeyup="filterTable()" />
+        <a asp-action="Create" class="btn btn-success">Crear Habitación</a>
+    </div>
+
+    <table class="table table-bordered table-striped" id="habitacionesTable">
+        <thead class="table-dark">
+            <tr>
+                <th>Tipo de Habitación</th>
+                <th>Cantidad de Personas</th>
+                <th>@Html.DisplayNameFor(model => model.NombreHabitacion)</th>
+                <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
+                <th>@Html.DisplayNameFor(model => model.Costo)</th>
+                <th>Imágenes</th>
+                <th>@Html.DisplayNameFor(model => model.Estado)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr id="habitacion-@item.IdHabitacion">
+                    <td>@Html.DisplayFor(modelItem => item.IdTipoHabitacionNavigation.NombreTipoHabitacion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.IdTipoHabitacionNavigation.NumeroPersonas)</td>
+                    <td>@Html.DisplayFor(modelItem => item.NombreHabitacion)</td>
+                   
+                    <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Costo)</td>
+                    <td>
+                        @if (item.ImagenHabitacions != null && item.ImagenHabitacions.Any())
+                        {
+                            var imagenes = item.ImagenHabitacions.ToList();
+                            <div class="image-container" style="position: relative; width: 170px; height: 100px;">
+                                <img src="@imagenes[0].IdImagenNavigation.UrlImagen" alt="Imagen principal" class="img-thumbnail main-image" style="width: 100%; height: 100%;" />
+                                @if (imagenes.Count > 1)
+                                {
+                                    @for (int i = 1; i < imagenes.Count; i++)
+                                    {
+                                        <img src="@imagenes[i].IdImagenNavigation.UrlImagen" alt="Imagen secundaria" class="img-thumbnail secondary-image" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s;" />
+                                    }
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <span>No hay imágenes</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" id="EstadoSwitch_@item.IdHabitacion"
+                                   onchange="updateEstado(@item.IdHabitacion, this.checked)"
+                            @(item.Estado ? "checked" : "") />
+                            <label class="form-check-label" for="EstadoSwitch_@item.IdHabitacion">
+                                @(item.Estado ? "Disponible" : "Ocupada")
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdHabitacion" class="btn btn-sm mx-1 btn-primary">Editar</a>
+                        <a asp-action="Details" asp-route-id="@item.IdHabitacion" class="btn btn-sm mx-1 btn-info">Detalles</a>
+                        <a asp-action="Delete" asp-route-id="@item.IdHabitacion" class="btn btn-sm mx-1 btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <nav aria-label="Page navigation" class="mt-3">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+<style>
+
+
+    .table-bordered td {
+        background-color: #ffffff; /* Aseguramos que las celdas de la tabla tengan un fondo blanco */
+    }
+
+    .table-striped tbody tr:nth-child(odd) {
+        background-color: #f9f9f9; /* Fondo alternado en las filas */
+    }
+
+    .form-check-input:checked {
+        background-color: #28a745 !important; /* Color verde para el switch cuando está seleccionado */
+        border-color: #28a745 !important;
+    }
+
+    .btn {
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .btn:hover {
+            filter: brightness(90%);
+        }
+
+    .pagination .page-link {
+        color: #28a745;
+    }
+
+        .pagination .page-link:hover {
+            background-color: #e9ecef;
+        }
+
+</style>
+
+@section Scripts {
+    <script>
+        function filterTable() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById('habitacionesTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j]) {
+                        const textValue = cells[j].textContent || cells[j].innerText;
+                        if (textValue.toLowerCase().indexOf(filter) > -1) {
+                            match = true;
+                            break;
+                        }
+                    }
+                }
+                rows[i].style.display = match ? '' : 'none';
+            }
+        }
+        function updateEstado(idHabitacion, nuevoEstado) {
+            const confirmacion = window.confirm("¿Quieres cambiar el estado de la habitación?");
+            if (!confirmacion) {
+                document.querySelector(`#EstadoSwitch_${idHabitacion}`).checked = !nuevoEstado;
+                return;
+            }
+
+            const csrfToken = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+            // Cambié la URL para asegurar que esté apuntando correctamente al método ActualizarEstado
+            fetch(`/Habitaciones/ActualizarEstado?id=${idHabitacion}&estado=${nuevoEstado}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken // Asegúrate de que el CSRF Token esté siendo enviado
+                }
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Error al actualizar el estado');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        const estadoLabel = document.querySelector(`#habitacion-${idHabitacion} .form-check-label`);
+                        estadoLabel.textContent = nuevoEstado ? 'Disponible' : 'Ocupada';
+                    } else {
+                        alert('Hubo un problema al actualizar el estado.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error al actualizar el estado.');
+                });
+        }
+
+
+      
+    </script>
+}

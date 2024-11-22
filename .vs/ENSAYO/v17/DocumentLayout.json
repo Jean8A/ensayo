@@ -1,0 +1,593 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\tipohabitaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\tipohabitaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\tipohabitaciones\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\tipohabitaciones\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\tipohabitaciones\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\tipohabitaciones\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\tipohabitaciones\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\tipohabitaciones\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\controllers\\tipohabitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\controllers\\tipohabitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\controllers\\habitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\controllers\\habitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\estadosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\estadosreserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\imagenabono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\imagenabono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\imagene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\imagene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241120225012_migracion  donde se agrega el inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ENSAYO\\Migrations\\20241120225012_migracion  donde se agrega el inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\ensayocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\ensayocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\habitacione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\habitacione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\gestionarimagenes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\gestionarimagenes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\imagenhabitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\imagenhabitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\migrations\\20241119202514_eliminar fotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\migrations\\20241119202514_eliminar fotos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\uploadimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\uploadimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\tipohabitaciones\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\tipohabitaciones\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\habitaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\habitaciones\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\tipohabitacione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\tipohabitacione.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\migrations\\20241112183914_secondgear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\migrations\\20241112183914_secondgear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\detallereservapaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\detallereservapaquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\models\\imagenservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\models\\imagenservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|c:\\users\\ovick pc\\source\\repos\\ensayo\\ensayo\\migrations\\20241106201103_primeramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D8D51B7-67B3-4C05-B4C4-878EE93994F4}|ENSAYO\\ENSAYO.csproj|solutionrelative:ensayo\\migrations\\20241106201103_primeramigracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HabitacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Controllers\\HabitacionesController.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Controllers\\HabitacionesController.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Controllers\\HabitacionesController.cs",
+              "RelativeToolTip": "ENSAYO\\Controllers\\HabitacionesController.cs",
+              "ViewState": "AgIAAHEBAAAAAAAAAAAAwI0BAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T17:56:38.866Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Imagene.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Imagene.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\Imagene.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Imagene.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\Imagene.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T19:03:34.556Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Edit.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\Edit.cshtml",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAAAJQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T18:39:28.138Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Create.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\TipoHabitaciones\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Create.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\TipoHabitaciones\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T17:39:33.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Create.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Create.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\Create.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T18:46:09.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\TipoHabitaciones\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Delete.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\TipoHabitaciones\\Delete.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T18:18:52.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\TipoHabitaciones\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Edit.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\TipoHabitaciones\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-18T19:48:42.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\TipoHabitaciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Index.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\TipoHabitaciones\\Index.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T22:14:22.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoHabitacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Controllers\\TipoHabitacionesController.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Controllers\\TipoHabitacionesController.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Controllers\\TipoHabitacionesController.cs",
+              "RelativeToolTip": "ENSAYO\\Controllers\\TipoHabitacionesController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAuwEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T17:59:25.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20241120225012_migracion  donde se agrega el inventario.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241120225012_migracion  donde se agrega el inventario.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Migrations\\20241120225012_migracion  donde se agrega el inventario.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241120225012_migracion  donde se agrega el inventario.cs",
+              "RelativeToolTip": "ENSAYO\\Migrations\\20241120225012_migracion  donde se agrega el inventario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:50:14.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ImagenAbono.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\ImagenAbono.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\ImagenAbono.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\ImagenAbono.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\ImagenAbono.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T17:20:16.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EstadosReserva.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\EstadosReserva.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\EstadosReserva.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\EstadosReserva.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\EstadosReserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T17:20:24.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Inventario.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\Inventario.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Inventario.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\Inventario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T22:39:59.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EnsayoContext.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\EnsayoContext.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\EnsayoContext.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\EnsayoContext.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\EnsayoContext.cs",
+              "ViewState": "AgIAAKgBAAAAAAAAAAAmwLABAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T17:45:43.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ImagenHabitacion.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\ImagenHabitacion.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\ImagenHabitacion.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\ImagenHabitacion.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\ImagenHabitacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:58:28.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Habitacione.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Habitacione.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\Habitacione.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Habitacione.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\Habitacione.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBgAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:09:47.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Details.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Details.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\Details.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T18:56:29.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GestionarImagenes.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\GestionarImagenes.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\GestionarImagenes.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\GestionarImagenes.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\GestionarImagenes.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T18:45:23.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UploadImage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\UploadImage.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\UploadImage.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\UploadImage.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\UploadImage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T18:55:54.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Program.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Program.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Program.cs",
+              "RelativeToolTip": "ENSAYO\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T17:48:19.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Details.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\TipoHabitaciones\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\TipoHabitaciones\\Details.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\TipoHabitaciones\\Details.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T22:43:54.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20241119202514_eliminar fotos.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241119202514_eliminar fotos.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Migrations\\20241119202514_eliminar fotos.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241119202514_eliminar fotos.cs",
+              "RelativeToolTip": "ENSAYO\\Migrations\\20241119202514_eliminar fotos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T20:25:16.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Reserva.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\Reserva.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\Reserva.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\Reserva.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T19:54:01.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TipoHabitacione.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\TipoHabitacione.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\TipoHabitacione.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\TipoHabitacione.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\TipoHabitacione.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T20:12:47.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Index.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Index.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\Index.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAANcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T21:56:20.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Habitaciones\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Habitaciones\\Delete.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Habitaciones\\Delete.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T21:33:02.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ENSAYO\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ENSAYO\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-08T18:23:13.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ENSAYO\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ENSAYO\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAIwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-06T17:54:22.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "ENSAYO\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "ENSAYO\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-08T18:28:46.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20241112183914_secondGear.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241112183914_secondGear.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Migrations\\20241112183914_secondGear.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241112183914_secondGear.cs",
+              "RelativeToolTip": "ENSAYO\\Migrations\\20241112183914_secondGear.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T18:39:17.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DetalleReservaPaquete.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\DetalleReservaPaquete.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\DetalleReservaPaquete.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\DetalleReservaPaquete.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\DetalleReservaPaquete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T18:32:08.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ImagenServicio.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\ImagenServicio.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Models\\ImagenServicio.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Models\\ImagenServicio.cs",
+              "RelativeToolTip": "ENSAYO\\Models\\ImagenServicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T20:18:10.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\appsettings.json",
+              "RelativeDocumentMoniker": "ENSAYO\\appsettings.json",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\appsettings.json",
+              "RelativeToolTip": "ENSAYO\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-06T17:47:11.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20241106201103_PrimeraMigracion.cs",
+              "DocumentMoniker": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241106201103_PrimeraMigracion.cs",
+              "RelativeDocumentMoniker": "ENSAYO\\Migrations\\20241106201103_PrimeraMigracion.cs",
+              "ToolTip": "C:\\Users\\ovick pc\\source\\repos\\ENSAYO\\ENSAYO\\Migrations\\20241106201103_PrimeraMigracion.cs",
+              "RelativeToolTip": "ENSAYO\\Migrations\\20241106201103_PrimeraMigracion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T20:11:05.121Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

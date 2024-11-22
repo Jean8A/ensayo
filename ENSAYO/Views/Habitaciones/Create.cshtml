@@ -1,0 +1,127 @@
+﻿@* @model ENSAYO.Models.Habitacione
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Habitacione</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <!-- Agregar el atributo enctype para manejar archivos -->
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdTipoHabitacion" class="control-label"></label>
+                <select asp-for="IdTipoHabitacion" class="form-control" asp-items="ViewBag.IdTipoHabitacion"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="NombreHabitacion" class="control-label"></label>
+                <input asp-for="NombreHabitacion" class="form-control" />
+                <span asp-validation-for="NombreHabitacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Costo" class="control-label"></label>
+                <input asp-for="Costo" class="form-control" />
+                <span asp-validation-for="Costo" class="text-danger"></span>
+            </div>
+            <!-- Campo de carga de imágenes -->
+            <div class="form-group">
+                <label for="uploadedFiles" class="control-label">Subir Imágenes</label>
+                <input type="file" name="uploadedFiles" class="form-control" multiple />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} *@
+
+@model ENSAYO.Models.Habitacione
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Crear Habitación</h1>
+
+<!-- Formulario -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Tipo Habitacion -->
+                <div class="form-group">
+                    <label asp-for="IdTipoHabitacion" class="control-label">Tipo de Habitacion</label>
+                    <select asp-for="IdTipoHabitacion" class="form-control" asp-items="ViewBag.IdTipoHabitacion">
+                        <option value="">Seleccione un Tipo</option>  <!-- Placeholder -->
+                    </select>
+                    <span asp-validation-for="IdTipoHabitacion" class="text-danger"></span>
+                </div>
+
+                <!-- Nombre Habitacion -->
+                <div class="form-group">
+                    <label asp-for="NombreHabitacion" class="control-label">Nombre de la Habitacion</label>
+                    <input asp-for="NombreHabitacion" class="form-control" placeholder="Nombre de la habitacion" />
+                    <span asp-validation-for="NombreHabitacion" class="text-danger"></span>
+                </div>
+
+                <!-- Descripcion -->
+                <div class="form-group">
+                    <label asp-for="Descripcion" class="control-label">Descripcion</label>
+                    <textarea asp-for="Descripcion" class="form-control" placeholder="Descripcion de la habitacion"></textarea>
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                </div>
+
+                <!-- Costo -->
+                <div class="form-group">
+                    <label asp-for="Costo" class="control-label">Costo</label>
+                    <input asp-for="Costo" class="form-control" type="number" placeholder="Costo de la habitacion" />
+                    <span asp-validation-for="Costo" class="text-danger"></span>
+                </div>
+
+                <!-- Campo de carga de imágenes -->
+                <div class="form-group">
+                    <label for="uploadedFiles" class="control-label">Subir Imágenes</label>
+                    <input type="file" name="uploadedFiles" class="form-control" multiple />
+                    <small class="form-text text-muted">Puedes seleccionar varias imágenes</small>
+                </div>
+
+                <!-- Boton de submit -->
+                <div class="form-group">
+                    <input type="submit" value="Crear Habitacion" class="btn btn-success btn-block" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Volver a la lista -->
+<div class="text-center mt-4">
+    <a asp-action="Index" class="btn btn-outline-primary">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
